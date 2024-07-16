@@ -9,13 +9,14 @@ import { changeLocalStorage } from "../../services/LStorage";
 export default function FormLogin() {
   
   const [getEmail, setEmail] = useState('');
+  const [getPassword, setPassword] = useState('');
   const { setIsLoggedIn } = useContext(AppContext);
   const navigateTo = useNavigate();
 
-  const validateUser = async (email: string) => {
-    const loggedIn = await Login(email);
+  const validateUser = async (email: string, password: string) => {
+    const loggedIn = await Login(email, password);
     if (!loggedIn) {
-      return alert("Email inválido")
+      return alert("Email ou senha inválido")
     }
     setIsLoggedIn(true)
     changeLocalStorage({ login: true })
@@ -31,9 +32,9 @@ export default function FormLogin() {
         </Center>
         
         <Input placeholder="Email" value={getEmail} onChange={(e) => setEmail(e.target.value)}/>
-        <Input placeholder="Password" type="password" />
+        <Input placeholder="Password" type="password" value={getPassword} onChange={(e) => setPassword(e.target.value)} />
 
-        <LoginButton fazerLogin={() => {validateUser(getEmail)}} />
+        <LoginButton fazerLogin={() => {validateUser(getEmail, getPassword)}} />
       </Box>
     </Box>
   </>)
