@@ -7,7 +7,6 @@ export default function Homepage() {
   return (<>
   
   <Box minHeight='100vh' backgroundColor="#222222" display='flex' alignItems={'center'} justifyContent={'center'} >
-    <Header></Header>
     <MainGrid></MainGrid>
     <Footer></Footer>
   </Box>

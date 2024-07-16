@@ -27,7 +27,6 @@ export default function MainGrid() {
 
   useEffect(() => {
     const getData = async () => {
-      console.log('foi')
       const data: any | IUserData = await api;
       setUser(data);
     }
