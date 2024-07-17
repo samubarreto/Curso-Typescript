@@ -1,6 +1,6 @@
 <div align="center">
 
-  [![My Skills](https://skillicons.dev/icons?i=js,ts,react,nodejs,express)](https://www.linkedin.com/in/samubrreto/)
+  [![My Skills](https://skillicons.dev/icons?i=js,ts,react,nodejs,express,jest)](https://www.linkedin.com/in/samubrreto/)
   ---
   [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/samubrreto/)
 
