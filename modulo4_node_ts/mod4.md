@@ -2,3 +2,4 @@
 * http get, post, put, patch e delete
 * express é uma lib js que permite construir o roteamento da aplicação js node backend
 * thunder client é uma extensão do vscode parecida com o postman, insomnia..
+* jest pra testar o backend tb
